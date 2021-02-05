@@ -12,4 +12,10 @@ func main() {
 	//Slice the loons from 1
 	fmt.Println(loons[1:])
 
+	//Array containing integers
+	numbers := []int{2, 4, 5, 7}
+	for i := 0; i < len(numbers); i++ {
+		fmt.Println(numbers[i])
+	}
+
 }
