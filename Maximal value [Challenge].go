@@ -4,10 +4,11 @@ import "fmt"
 
 func main() {
 	nums := []int{16, 8, 42, 4, 23, 15}
-	var max int
-	for i := 0; i < len(nums); i++ {
-		if nums[i] > max {
-			max = nums[i]
+	//Begin with the assumption that the first item is the largest
+	max := nums[0]
+	for _, value := range nums[1:] {
+		if value > max {
+			max = value
 		}
 	}
 	fmt.Println(max)
